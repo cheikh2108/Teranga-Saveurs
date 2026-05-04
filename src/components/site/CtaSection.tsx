@@ -32,9 +32,7 @@ export function CtaSection({ whatsappE164, isOpen }: Props) {
             WhatsApp
           </MagneticButton>
         </div>
-        <p className="mt-8 text-xs text-white/35">
-          Numéro WhatsApp géré depuis l’admin — format international sans « + » (ex. 33612345678).
-        </p>
+        
       </div>
     </section>
   )
