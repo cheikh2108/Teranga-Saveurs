@@ -14,6 +14,12 @@ const wordsSub = ['dans', 'chaque', 'plat']
 export function HeroSection({ heroImageUrl, isOpen, onReserve }: Props) {
   const root = useRef<HTMLElement>(null)
 
+  const onSeeDishes = () => {
+    const target = document.getElementById('plats')
+    if (!target) return
+    target.scrollIntoView({ behavior: 'smooth', block: 'start' })
+  }
+
   useLayoutEffect(() => {
     const el = root.current
     if (!el) return
@@ -98,12 +104,13 @@ export function HeroSection({ heroImageUrl, isOpen, onReserve }: Props) {
             <span className="relative z-10">Commander</span>
             <span className="pointer-events-none absolute inset-0 -translate-x-full bg-teranga-gold transition-transform duration-500 group-hover:translate-x-0 group-hover:duration-700" />
           </MagneticButton>
-          <a
-            href="#plats"
+          <button
+            type="button"
+            onClick={onSeeDishes}
             className="rounded-full border border-white/25 px-7 py-3.5 text-sm uppercase tracking-[0.2em] text-white/80 backdrop-blur-sm transition hover:border-teranga-gold/60 hover:text-white"
           >
             Voir les plats
-          </a>
+          </button>
         </div>
       </div>
     </section>

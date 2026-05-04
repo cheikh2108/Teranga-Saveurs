@@ -5,11 +5,17 @@ import { StatusIndicator } from './StatusIndicator'
 type Props = { isOpen: boolean }
 
 const links = [
-  { href: '#plats', label: 'Plats du jour' },
-  { href: '#histoire', label: 'Histoire' },
-  { href: '#avis', label: 'Avis' },
-  { href: '#contact', label: 'Contact' },
+  { id: 'plats', label: 'Plats du jour' },
+  { id: 'histoire', label: 'Histoire' },
+  { id: 'avis', label: 'Avis' },
+  { id: 'contact', label: 'Contact' },
 ]
+
+function scrollToSection(id: string) {
+  const target = document.getElementById(id)
+  if (!target) return
+  target.scrollIntoView({ behavior: 'smooth', block: 'start' })
+}
 
 export function SiteNav({ isOpen }: Props) {
   return (
@@ -27,13 +33,14 @@ export function SiteNav({ isOpen }: Props) {
         </div>
         <nav className="hidden items-center gap-8 text-sm text-white/70 md:flex">
           {links.map((l) => (
-            <a
-              key={l.href}
-              href={l.href}
+            <button
+              key={l.id}
+              type="button"
+              onClick={() => scrollToSection(l.id)}
               className="relative transition-colors after:absolute after:-bottom-1 after:left-0 after:h-0.5 after:w-0 after:bg-teranga-gold after:transition-all hover:text-white hover:after:w-full"
             >
               {l.label}
-            </a>
+            </button>
           ))}
           {SHOW_ADMIN_IN_NAV ? (
             <Link
@@ -47,9 +54,14 @@ export function SiteNav({ isOpen }: Props) {
       </div>
       <nav className="pointer-events-auto mt-2 flex flex-wrap gap-x-4 gap-y-2 border-t border-white/5 pt-3 text-[0.68rem] uppercase tracking-[0.16em] text-white/55 md:hidden">
         {links.map((l) => (
-          <a key={l.href} href={l.href} className="transition hover:text-white">
+          <button
+            key={l.id}
+            type="button"
+            onClick={() => scrollToSection(l.id)}
+            className="transition hover:text-white"
+          >
             {l.label}
-          </a>
+          </button>
         ))}
         {SHOW_ADMIN_IN_NAV ? (
           <Link to={ADMIN_BASE_PATH} className="transition hover:text-white">
