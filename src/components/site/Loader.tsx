@@ -41,11 +41,11 @@ export function Loader({ onDone }: Props) {
       className="pointer-events-none fixed inset-0 z-[100] flex flex-col items-center justify-center bg-teranga-night"
       aria-hidden
     >
-      <p className="font-display text-3xl tracking-wide text-teranga-paper md:text-4xl">Teranga Saveurs</p>
+      <p className="font-display text-3xl tracking-wide text-teranga-paper md:text-4xl">Tacko delices</p>
       <div className="mt-8 flex w-[min(18rem,80vw)] gap-1">
+        <span data-bar className="h-px flex-1 bg-teranga-moss/90" />
         <span data-bar className="h-px flex-1 bg-teranga-gold/90" />
         <span data-bar className="h-px flex-1 bg-teranga-clay/90" />
-        <span data-bar className="h-px flex-1 bg-teranga-moss/90" />
       </div>
     </div>
   )

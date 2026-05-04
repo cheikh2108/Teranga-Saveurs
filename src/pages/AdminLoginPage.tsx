@@ -36,7 +36,7 @@ export function AdminLoginPage() {
       <AdminSeo />
       <div className="w-full max-w-md rounded-[2rem] border border-white/10 bg-white/[0.04] p-10 shadow-[0_40px_120px_rgba(0,0,0,0.55)] backdrop-blur-xl">
         <p className="text-xs uppercase tracking-[0.3em] text-teranga-gold/90">Espace pro</p>
-        <h1 className="mt-3 font-display text-3xl">Teranga Saveurs</h1>
+        <h1 className="mt-3 font-display text-3xl">Tacko delices</h1>
         <p className="mt-2 text-sm text-white/55">
           Connexion avec le compte créé dans Supabase (Authentication).
         </p>

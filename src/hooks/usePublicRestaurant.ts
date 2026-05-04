@@ -24,8 +24,8 @@ export function usePublicRestaurant() {
 
   useEffect(() => {
     if (!data) return
-    if (sessionStorage.getItem('teranga_tracked')) return
-    sessionStorage.setItem('teranga_tracked', '1')
+    if (sessionStorage.getItem('tacko_tracked')) return
+    sessionStorage.setItem('tacko_tracked', '1')
     void trackVisit()
   }, [data])
 

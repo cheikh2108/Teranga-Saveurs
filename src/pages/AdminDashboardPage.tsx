@@ -109,7 +109,7 @@ export function AdminDashboardPage() {
         <header className="flex flex-col gap-4 border-b border-white/10 pb-8 md:flex-row md:items-end md:justify-between">
           <div>
             <p className="text-xs uppercase tracking-[0.3em] text-teranga-gold/90">Administration</p>
-            <h1 className="mt-2 font-display text-4xl">Teranga Saveurs</h1>
+            <h1 className="mt-2 font-display text-4xl">Tacko delices</h1>
             <p className="mt-2 max-w-2xl text-sm text-white/55">
               Ici le restaurateur met à jour les <strong className="text-white/80">plats du jour</strong> (1 ou 2),
               le <strong className="text-white/80">statut ouvert / fermé</strong>, le{' '}

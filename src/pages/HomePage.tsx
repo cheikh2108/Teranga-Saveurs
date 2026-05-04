@@ -60,9 +60,9 @@ export function HomePage() {
             <CtaSection whatsappE164={data.whatsappE164} isOpen={data.isOpen} />
           </main>
           <footer className="border-t border-white/5 bg-black py-10 text-center text-xs text-white/40">
-            <p className="mb-2 uppercase tracking-widest text-teranga-gold/80">Teranga Saveurs</p>
+            <p className="mb-2 uppercase tracking-widest text-teranga-gold/80">Tacko delices</p>
             <p className="tracking-wide">L'âme de la gastronomie sénégalaise, savourée à chaque bouchée.</p>
-            <p className="mt-6 opacity-60">© {new Date().getFullYear()} Teranga Saveurs. Tous droits réservés.</p>
+            <p className="mt-6 opacity-60">© {new Date().getFullYear()} Tacko delices. Tous droits réservés.</p>
           </footer>
         </>
       ) : null}

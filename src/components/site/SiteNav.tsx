@@ -26,7 +26,7 @@ export function SiteNav({ isOpen }: Props) {
             to="/"
             className="font-display text-xl tracking-wide text-teranga-paper md:text-2xl"
           >
-            Teranga Saveurs
+            Tacko delices
           </Link>
           <span className="hidden text-white/25 md:inline">/</span>
           <StatusIndicator open={isOpen} />

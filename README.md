@@ -1,4 +1,4 @@
-# 🇸🇳 Teranga Saveurs
+# 🇸🇳 Tacko delices
 
 Une application web moderne, performante et élégante pour un restaurant de gastronomie sénégalaise. L'accent est mis sur l'immersion visuelle, l'expérience utilisateur et la simplicité de gestion.
 
@@ -36,8 +36,8 @@ Une application web moderne, performante et élégante pour un restaurant de gas
 
 1. **Cloner le projet**
    ```bash
-   git clone https://github.com/votre-compte/teranga-saveurs.git
-   cd Teranga-saveurs
+   git clone https://github.com/votre-compte/tacko-delices.git
+   cd Tacko-delices
    ```
 
 2. **Installer les dépendances**
