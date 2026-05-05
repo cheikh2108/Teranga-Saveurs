@@ -9,7 +9,7 @@ export function CtaSection({ whatsappE164, isOpen }: Props) {
   const phoneDigits = whatsappE164.replace(/\D/g, '')
   const whatsappHref = `https://wa.me/${phoneDigits}`
   const phoneHref = `tel:+${phoneDigits}`
-  const phoneLabel = whatsappE164.trim().startsWith('+') ? whatsappE164.trim() : `+${phoneDigits}`
+  const phoneLabel = phoneDigits
 
   return (
     <section
