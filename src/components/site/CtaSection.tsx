@@ -7,9 +7,11 @@ type Props = {
 
 export function CtaSection({ whatsappE164, isOpen }: Props) {
   const phoneDigits = whatsappE164.replace(/\D/g, '')
-  const whatsappHref = `https://wa.me/${phoneDigits}`
-  const phoneHref = `tel:+${phoneDigits}`
-  const phoneLabel = phoneDigits
+  // Ensure Senegal format: +221XXXXXXXXX
+  const sn221 = phoneDigits.startsWith('221') ? phoneDigits : `221${phoneDigits.replace(/^0+/, '')}`
+  const whatsappHref = `https://wa.me/${sn221}`
+  const phoneHref = `tel:+${sn221}`
+  const phoneLabel = sn221
 
   return (
     <section
