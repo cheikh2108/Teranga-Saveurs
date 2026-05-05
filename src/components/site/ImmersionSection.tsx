@@ -65,8 +65,8 @@ export function ImmersionSection() {
           </h2>
           <p className="mt-5 text-sm leading-relaxed text-white/60 md:text-base">
             Le thiéb, le yassa, les marinades patientes : tout est affaire de temps, d’épices
-            équilibrées et de gestes transmis. Chez Tacko delices, on célèbre la générosité — la
-            vraie — celle qui nourrit et rassemble.
+            équilibrées et de gestes transmis. Chez Tacko delices, on célèbre la générosité, la
+            vraie, celle qui nourrit et rassemble.
           </p>
           <div className="mt-8 flex flex-wrap gap-3 text-xs uppercase tracking-[0.22em] text-white/45">
             <span className="rounded-full border border-white/10 px-4 py-2">Riz parfumé</span>
